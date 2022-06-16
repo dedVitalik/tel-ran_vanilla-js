@@ -1,0 +1,23 @@
+function handler(arr, n) {
+	return arr.filter(el => el !== n); 
+}
+
+function handler(arr) {
+	return arr.map(el => Math.abs(el)); 
+}
+
+function handler(arr) {
+	return arr.filter((el, i) => el !== i); 
+}
+
+function handler(arr) {
+	return arr.filter((el, i, arr) => arr.indexOf(el) === i); 
+}
+
+function handler(arr) {
+	return arr.map(el => el.length); 
+}
+
+function handler(arr, n) {
+    return arr.filter(el => typeof el === 'number').map(el => Math.pow(el, n))
+  }
