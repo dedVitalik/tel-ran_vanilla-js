@@ -3,30 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<form id="user_add_form">
-    <label>
-        Your name:
-        <input name="firstname" type="text">
-    </label>
+<form class="decor">
+    <div class="form-left-decoration"></div>
+    <div class="form-right-decoration"></div>
+    <div class="circle"></div>
+    <div class="form-inner">
+        <h3>Добавить актерчика:</h3>
+        <input type="text" name="firstname" placeholder="Введите имя">
+        <input type="text" name="lastname" placeholder="А тут фамилию">
+        <textarea name="avatar" placeholder="А вот тут пожалуйста ссылку на фотку!" rows="3"></textarea>
+        <button>Добавить</button>
+        <button>Миша все фигня, давай сначала</button>
 
-    <label>
-        <p>Your surname:</p>
-        <input name="lastname" type="text">
-    </label>
-
-    <label>
-        <p>Your avatar link:</p>
-        <input name="avatar" type="text">
-    </label>
-
-    <button>Submit</button>
-    <button>Clear</button>
-
+    </div>
 </form>
 
+<div class="main-content">
+    <div class="actor-card">
+        <img class="actor-card__img" src="https://n1s1.hsmedia.ru/3f/8b/ea/3f8bea55570f36ba7700a9744e182acc/728x542_1_c470510221aaa829c737d8787d6322fc@1000x745_0xac120003_5602258841572515776.jpg">
+        <div class="actor-card__info">
+            <time class="actor-card__firstname">Эдвард</time>
+            <h3 class="actor-card__lastname">Нортон</h3>
+        </div>
+        <p>Эдвард</p>
+        <p>Нортон</p>
+    </div>
+
+    <div class="actor-card">
+        <img class="actor-card__img" src="https://n1s1.hsmedia.ru/3f/8b/ea/3f8bea55570f36ba7700a9744e182acc/728x542_1_c470510221aaa829c737d8787d6322fc@1000x745_0xac120003_5602258841572515776.jpg">
+        <div class="actor-card__info">
+            <time class="actor-card__firstname">Эдвард</time>
+            <h3 class="actor-card__lastname">Нортон</h3>
+        </div>
+        <p>Эдвард</p>
+        <p>Нортон</p>
+    </div>
+
+    <div class="actor-card">
+        <img class="actor-card__img" src="https://n1s1.hsmedia.ru/3f/8b/ea/3f8bea55570f36ba7700a9744e182acc/728x542_1_c470510221aaa829c737d8787d6322fc@1000x745_0xac120003_5602258841572515776.jpg">
+        <div class="actor-card__info">
+            <time class="actor-card__firstname">Эдвард</time>
+            <h3 class="actor-card__lastname">Нортон</h3>
+        </div>
+        <p>Эдвард</p>
+        <p>Нортон</p>
+    </div>
+</div>
 <script src="main.js"></script>
 </body>
 </html>
